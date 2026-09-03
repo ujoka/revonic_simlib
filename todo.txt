@@ -1,2 +1,3 @@
 Priority:
+- Migrate 'revonic_description' package from ROS1 to ROS2 Jazzy
 - Setup PyBullet package

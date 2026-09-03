@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="revonic_eva2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0099133 5.3328E-10 0.10063"
+        rpy="0 0 0" />
+      <mass
+        value="5.1252" />
+      <inertia
+        ixx="0.043723"
+        ixy="-5.0374E-11"
+        ixz="1.7224E-06"
+        iyy="0.10352"
+        iyz="3.3453E-10"
+        izz="0.12881" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="suspension_arm1">
+    <inertial>
+      <origin
+        xyz="-0.027666 -0.00020215 -0.045647"
+        rpy="0 0 0" />
+      <mass
+        value="6.5506" />
+      <inertia
+        ixx="0.0069186"
+        ixy="1.9465E-06"
+        ixz="-0.00023942"
+        iyy="0.07249"
+        iyz="-1.4264E-07"
+        izz="0.07448" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/suspension_arm1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/suspension_arm1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axle_suspension1_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.25221 0.1325"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="suspension_arm1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="crab_steer_assy1">
+    <inertial>
+      <origin
+        xyz="-3.0486E-07 0.00028285 -0.14196"
+        rpy="0 0 0" />
+      <mass
+        value="7.336" />
+      <inertia
+        ixx="0.021436"
+        ixy="9.9779E-07"
+        ixz="1.0082E-07"
+        iyy="0.01885"
+        iyz="-0.0019102"
+        izz="0.010984" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="crab_steer_joint1"
+    type="revolute">
+    <origin
+      xyz="0.44154 -8.6603E-05 -0.097654"
+      rpy="0 0 0" />
+    <parent
+      link="suspension_arm1" />
+    <child
+      link="crab_steer_assy1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="24.8"
+      velocity="25.133" />
+    <dynamics
+      damping="0.05"
+      friction="0.48" />
+  </joint>
+  <link
+    name="drive_hex_wheel1">
+    <inertial>
+      <origin
+        xyz="-1.1795E-07 -0.033892 -1.3194E-07"
+        rpy="0 0 0" />
+      <mass
+        value="5.5281" />
+      <inertia
+        ixx="0.024781"
+        ixy="-8.0351E-08"
+        ixz="9.8035E-09"
+        iyy="0.037119"
+        iyz="-1.3538E-07"
+        izz="0.024781" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="drive_act_joint1"
+    type="revolute">
+    <origin
+      xyz="0 0.03535 -0.23146"
+      rpy="0 0 0" />
+    <parent
+      link="crab_steer_assy1" />
+    <child
+      link="drive_hex_wheel1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="53"
+      velocity="16.7552" />
+    <dynamics
+      damping="0.05"
+      friction="0.8" />
+  </joint>
+  <link
+    name="crab_steer_assy2">
+    <inertial>
+      <origin
+        xyz="-3.0719131410839E-07 0.000282848562774718 -0.141958713105033"
+        rpy="0 0 0" />
+      <mass
+        value="7.33599962756682" />
+      <inertia
+        ixx="0.0214355158594136"
+        ixy="9.97794165202934E-07"
+        ixz="1.00973547076332E-07"
+        iyy="0.0188504698946929"
+        iyz="-0.00191018147848548"
+        izz="0.0109835157397389" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="crab_steer_joint2"
+    type="revolute">
+    <origin
+      xyz="-0.44154 -8.6602E-05 -0.097646"
+      rpy="0 0 0" />
+    <parent
+      link="suspension_arm1" />
+    <child
+      link="crab_steer_assy2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="24.8"
+      velocity="25.133" />
+    <dynamics
+      damping="0.05"
+      friction="0.48" />
+  </joint>
+  <link
+    name="drive_hex_wheel2">
+    <inertial>
+      <origin
+        xyz="1.29261894077359E-07 -0.0318919942033298 -1.20872771125491E-07"
+        rpy="0 0 0" />
+      <mass
+        value="5.52809200361435" />
+      <inertia
+        ixx="0.0247806555065827"
+        ixy="1.33543234608899E-07"
+        ixz="-9.69918329210705E-09"
+        iyy="0.037118714202296"
+        iyz="-8.33619548877736E-08"
+        izz="0.0247806606009008" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="drive_act_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.03335 -0.23146"
+      rpy="0 0 0" />
+    <parent
+      link="crab_steer_assy2" />
+    <child
+      link="drive_hex_wheel2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="53"
+      velocity="16.7552" />
+    <dynamics
+      damping="0.05"
+      friction="0.8" />
+  </joint>
+  <link
+    name="suspension_arm2">
+    <inertial>
+      <origin
+        xyz="-0.027626 0.00015029 -0.045647"
+        rpy="0 0 0" />
+      <mass
+        value="6.5506" />
+      <inertia
+        ixx="0.0069186"
+        ixy="1.9465E-06"
+        ixz="-0.00023707"
+        iyy="0.07249"
+        iyz="1.407E-07"
+        izz="0.07448" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/suspension_arm2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/suspension_arm2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="axle_suspension2_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.25221 0.1325"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="suspension_arm2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="crab_steer_assy3">
+    <inertial>
+      <origin
+        xyz="-2.3057E-06 -0.00028285 -0.14196"
+        rpy="0 0 0" />
+      <mass
+        value="7.336" />
+      <inertia
+        ixx="0.021436"
+        ixy="1.0329E-06"
+        ixz="-2.9313E-07"
+        iyy="0.01885"
+        iyz="0.0019102"
+        izz="0.010984" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="crab_steer_joint3"
+    type="revolute">
+    <origin
+      xyz="-0.44154 8.6601E-05 -0.097646"
+      rpy="0 0 0" />
+    <parent
+      link="suspension_arm2" />
+    <child
+      link="crab_steer_assy3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="24.8"
+      velocity="25.133" />
+    <dynamics
+      damping="0.05"
+      friction="0.48" />
+  </joint>
+  <link
+    name="drive_hex_wheel3">
+    <inertial>
+      <origin
+        xyz="-1.2926E-07 0.033892 -1.2087E-07"
+        rpy="0 0 0" />
+      <mass
+        value="5.5281" />
+      <inertia
+        ixx="0.024781"
+        ixy="1.3354E-07"
+        ixz="9.6993E-09"
+        iyy="0.037119"
+        iyz="8.3359E-08"
+        izz="0.024781" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="drive_act_joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.03535 -0.23146"
+      rpy="0 0 0" />
+    <parent
+      link="crab_steer_assy3" />
+    <child
+      link="drive_hex_wheel3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="53"
+      velocity="16.7552" />
+    <dynamics
+      damping="0.05"
+      friction="0.8" />
+  </joint>
+  <link
+    name="crab_steer_assy4">
+    <inertial>
+      <origin
+        xyz="-2.3050013717163E-06 -0.000282849251066475 -0.141958713272035"
+        rpy="0 0 0" />
+      <mass
+        value="7.33599961716569" />
+      <inertia
+        ixx="0.0214355158064923"
+        ixy="1.03291244213142E-06"
+        ixz="-2.93012834555163E-07"
+        iyy="0.0188504698548001"
+        iyz="0.00191018146416809"
+        izz="0.0109835157500319" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/crab_steer_assy4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="crab_steer_joint4"
+    type="revolute">
+    <origin
+      xyz="0.44154 -8.6602E-05 -0.097654"
+      rpy="0 0 0" />
+    <parent
+      link="suspension_arm2" />
+    <child
+      link="crab_steer_assy4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="24.8"
+      velocity="25.133" />
+    <dynamics
+      damping="0.05"
+      friction="0.48" />
+  </joint>
+  <link
+    name="drive_hex_wheel4">
+    <inertial>
+      <origin
+        xyz="1.507873859663E-07 0.0338919942040705 -9.26392351718874E-08"
+        rpy="0 0 0" />
+      <mass
+        value="5.52809200361437" />
+      <inertia
+        ixx="0.0247806651971415"
+        ixy="-1.15749404360795E-07"
+        ixz="-7.0380406386449E-09"
+        iyy="0.0371187142022961"
+        iyz="1.06700920302874E-07"
+        izz="0.024780650910342" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/drive_hex_wheel4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="drive_act_joint4"
+    type="revolute">
+    <origin
+      xyz="0 -0.03535 -0.23146"
+      rpy="0 0 0" />
+    <parent
+      link="crab_steer_assy4" />
+    <child
+      link="drive_hex_wheel4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="53"
+      velocity="16.7552" />
+    <dynamics
+      damping="0.05"
+      friction="0.8" />
+  </joint>
+  <link
+    name="differential_bar">
+    <inertial>
+      <origin
+        xyz="0.010288 6.6138E-09 0.044354"
+        rpy="0 0 0" />
+      <mass
+        value="0.76629" />
+      <inertia
+        ixx="0.013025"
+        ixy="4.1952E-10"
+        ixz="1.2868E-06"
+        iyy="0.00070628"
+        iyz="-1.8927E-11"
+        izz="0.012413" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_bar_axis"
+    type="revolute">
+    <origin
+      xyz="-0.3461 0 0.1325"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="differential_bar" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt1_rodend1">
+    <inertial>
+      <origin
+        xyz="-1.8095190798928E-05 0.000256559158545555 -0.0119432766155368"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673584796962" />
+      <inertia
+        ixx="7.21226540434737E-07"
+        ixy="-7.417073499193E-10"
+        ixz="-9.47003238443819E-10"
+        iyy="6.60772755396745E-07"
+        iyz="1.2341956803659E-08"
+        izz="8.73411754001956E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection1_joint1"
+    type="revolute">
+    <origin
+      xyz="0.01025 0.25 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="differential_bar" />
+    <child
+      link="differential_connection_virt1_rodend1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt2_rodend1">
+    <inertial>
+      <origin
+        xyz="-1.8095190798928E-05 0.000256559158545555 -0.0119432766155368"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673584796962" />
+      <inertia
+        ixx="7.21226540434737E-07"
+        ixy="-7.417073499193E-10"
+        ixz="-9.47003238443818E-10"
+        iyy="6.60772755396745E-07"
+        iyz="1.2341956803659E-08"
+        izz="8.73411754001956E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection1_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt1_rodend1" />
+    <child
+      link="differential_connection_virt2_rodend1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_rodend1">
+    <inertial>
+      <origin
+        xyz="-6.11318886869494E-05 0.000880232537741832 -0.0407631225002599"
+        rpy="0 0 0" />
+      <mass
+        value="0.0130890092288472" />
+      <inertia
+        ixx="4.21790054703516E-06"
+        ixy="-6.39807921897711E-10"
+        ixz="-5.65654759306341E-09"
+        iyy="4.15599446129717E-06"
+        iyz="7.99943330444395E-08"
+        izz="4.58692639265557E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection1_joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt2_rodend1" />
+    <child
+      link="differential_connection_rodend1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt1_rodend2">
+    <inertial>
+      <origin
+        xyz="1.6586029561616E-05 -0.000257984029574776 0.0119433090701106"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673952947485" />
+      <inertia
+        ixx="6.61059761931097E-07"
+        ixy="1.37255937782408E-09"
+        ixz="-7.86848168132231E-10"
+        iyy="7.20914339838891E-07"
+        iyz="1.3659961227637E-08"
+        izz="8.73695854030152E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection2_joint1"
+    type="revolute">
+    <origin
+      xyz="-0.00014998 0.0021259 -0.098347"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_rodend1" />
+    <child
+      link="differential_connection_virt1_rodend2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt2_rodend2">
+    <inertial>
+      <origin
+        xyz="1.6586029561616E-05 -0.000257984029574776 0.0119433090701106"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673952947485" />
+      <inertia
+        ixx="6.61059761931097E-07"
+        ixy="1.37255937782408E-09"
+        ixz="-7.86848168132231E-10"
+        iyy="7.20914339838891E-07"
+        iyz="1.3659961227637E-08"
+        izz="8.73695854030152E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection2_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt1_rodend2" />
+    <child
+      link="differential_connection_virt2_rodend2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_rodend2">
+    <inertial>
+      <origin
+        xyz="1.6586029561616E-05 -0.000257984029574776 0.0119433090701106"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673952947485" />
+      <inertia
+        ixx="6.61059761931097E-07"
+        ixy="1.37255937782408E-09"
+        ixz="-7.86848168132231E-10"
+        iyy="7.20914339838891E-07"
+        iyz="1.3659961227637E-08"
+        izz="8.73695854030152E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection2_joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt2_rodend2" />
+    <child
+      link="differential_connection_rodend2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt1_rodend3">
+    <inertial>
+      <origin
+        xyz="-1.8302E-05 -0.00025656 -0.011943"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029567" />
+      <inertia
+        ixx="7.2118E-07"
+        ixy="-1.8923E-09"
+        ixz="-9.6112E-10"
+        iyy="6.6082E-07"
+        iyz="-1.2338E-08"
+        izz="8.7341E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection3_joint1"
+    type="revolute">
+    <origin
+      xyz="0.01025 -0.25 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="differential_bar" />
+    <child
+      link="differential_connection_virt1_rodend3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt2_rodend3">
+    <inertial>
+      <origin
+        xyz="-1.83024498982554E-05 -0.000256556754834769 -0.0119432783863921"
+        rpy="0 0 0" />
+      <mass
+        value="0.00295673626384774" />
+      <inertia
+        ixx="7.21177838777678E-07"
+        ixy="-1.89233651064902E-09"
+        ixz="-9.61117601434979E-10"
+        iyy="6.608216160658E-07"
+        iyz="-1.23383102642492E-08"
+        izz="8.73412162454636E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection3_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt1_rodend3" />
+    <child
+      link="differential_connection_virt2_rodend3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_rodend3">
+    <inertial>
+      <origin
+        xyz="-6.3302E-05 -0.00088051 -0.040763"
+        rpy="0 0 0" />
+      <mass
+        value="0.013089" />
+      <inertia
+        ixx="4.2179E-06"
+        ixy="-1.9975E-09"
+        ixz="-5.7578E-09"
+        iyy="4.156E-06"
+        iyz="-8.0002E-08"
+        izz="4.5869E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection3_joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt2_rodend3" />
+    <child
+      link="differential_connection_rodend3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt1_rodend4">
+    <inertial>
+      <origin
+        xyz="1.65990020765117E-05 0.000258492328237325 0.0119435262828372"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029567186402136" />
+      <inertia
+        ixx="6.62102362874624E-07"
+        ixy="7.96084649817283E-09"
+        ixz="-9.94583018403802E-10"
+        iyy="7.19857349192635E-07"
+        iyz="-1.37371542188793E-08"
+        izz="8.73706672317548E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection4_joint1"
+    type="revolute">
+    <origin
+      xyz="-0.00014998 -0.0021259 -0.098347"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_rodend3" />
+    <child
+      link="differential_connection_virt1_rodend4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_virt2_rodend4">
+    <inertial>
+      <origin
+        xyz="1.6599E-05 0.00025849 0.011944"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029567" />
+      <inertia
+        ixx="6.621E-07"
+        ixy="7.9608E-09"
+        ixz="-9.9458E-10"
+        iyy="7.1986E-07"
+        iyz="-1.3737E-08"
+        izz="8.7371E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection4_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt1_rodend4" />
+    <child
+      link="differential_connection_virt2_rodend4" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="differential_connection_rodend4">
+    <inertial>
+      <origin
+        xyz="1.6599E-05 0.00025849 0.011944"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029567" />
+      <inertia
+        ixx="6.621E-07"
+        ixy="7.9608E-09"
+        ixz="-9.9458E-10"
+        iyy="7.1986E-07"
+        iyz="-1.3737E-08"
+        izz="8.7371E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://revonic_eva2/meshes/differential_connection_rodend4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="differential_connection4_joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="differential_connection_virt2_rodend4" />
+    <child
+      link="differential_connection_rodend4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
