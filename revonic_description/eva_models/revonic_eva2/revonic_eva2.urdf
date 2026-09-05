@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/base_link.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/base_link.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/suspension_arm1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/suspension_arm1.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/suspension_arm1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/suspension_arm1.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy1.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy1.STL" />
       </geometry>
     </collision>
   </link>
@@ -185,7 +185,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel1.STL" />
       </geometry>
       <material
         name="">
@@ -199,7 +199,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel1.STL" />
       </geometry>
     </collision>
   </link>
@@ -244,7 +244,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy2.STL" />
       </geometry>
       <material
         name="">
@@ -258,7 +258,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy2.STL" />
       </geometry>
     </collision>
   </link>
@@ -305,7 +305,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel2.STL" />
       </geometry>
       <material
         name="">
@@ -319,7 +319,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel2.STL" />
       </geometry>
     </collision>
   </link>
@@ -364,7 +364,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/suspension_arm2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/suspension_arm2.STL" />
       </geometry>
       <material
         name="">
@@ -378,7 +378,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/suspension_arm2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/suspension_arm2.STL" />
       </geometry>
     </collision>
   </link>
@@ -422,7 +422,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy3.STL" />
       </geometry>
       <material
         name="">
@@ -436,7 +436,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy3.STL" />
       </geometry>
     </collision>
   </link>
@@ -483,7 +483,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel3.STL" />
       </geometry>
       <material
         name="">
@@ -497,7 +497,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel3.STL" />
       </geometry>
     </collision>
   </link>
@@ -542,7 +542,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy4.STL" />
       </geometry>
       <material
         name="">
@@ -556,7 +556,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/crab_steer_assy4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/crab_steer_assy4.STL" />
       </geometry>
     </collision>
   </link>
@@ -603,7 +603,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel4.STL" />
       </geometry>
       <material
         name="">
@@ -617,7 +617,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/drive_hex_wheel4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/drive_hex_wheel4.STL" />
       </geometry>
     </collision>
   </link>
@@ -662,7 +662,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_bar.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_bar.STL" />
       </geometry>
       <material
         name="">
@@ -676,7 +676,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_bar.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_bar.STL" />
       </geometry>
     </collision>
   </link>
@@ -720,7 +720,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
       </geometry>
       <material
         name="">
@@ -734,7 +734,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
       </geometry>
     </collision>
   </link>
@@ -778,7 +778,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
       </geometry>
       <material
         name="">
@@ -792,7 +792,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
       </geometry>
     </collision>
   </link>
@@ -836,7 +836,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend1.STL" />
       </geometry>
       <material
         name="">
@@ -850,7 +850,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend1.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend1.STL" />
       </geometry>
     </collision>
   </link>
@@ -894,7 +894,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
       </geometry>
       <material
         name="">
@@ -908,7 +908,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
       </geometry>
     </collision>
   </link>
@@ -952,7 +952,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
       </geometry>
       <material
         name="">
@@ -966,7 +966,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1010,7 +1010,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend2.STL" />
       </geometry>
       <material
         name="">
@@ -1024,7 +1024,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend2.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend2.STL" />
       </geometry>
     </collision>
   </link>
@@ -1068,7 +1068,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
       </geometry>
       <material
         name="">
@@ -1082,7 +1082,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
       </geometry>
     </collision>
   </link>
@@ -1126,7 +1126,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
       </geometry>
       <material
         name="">
@@ -1140,7 +1140,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
       </geometry>
     </collision>
   </link>
@@ -1184,7 +1184,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend3.STL" />
       </geometry>
       <material
         name="">
@@ -1198,7 +1198,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend3.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend3.STL" />
       </geometry>
     </collision>
   </link>
@@ -1242,7 +1242,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
       </geometry>
       <material
         name="">
@@ -1256,7 +1256,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
       </geometry>
     </collision>
   </link>
@@ -1300,7 +1300,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
       </geometry>
       <material
         name="">
@@ -1314,7 +1314,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
       </geometry>
     </collision>
   </link>
@@ -1358,7 +1358,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend4.STL" />
       </geometry>
       <material
         name="">
@@ -1372,7 +1372,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://revonic_eva2/meshes/differential_connection_rodend4.STL" />
+          filename="package://eva_models/revonic_eva2/meshes/differential_connection_rodend4.STL" />
       </geometry>
     </collision>
   </link>
