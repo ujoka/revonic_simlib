@@ -107,6 +107,7 @@
       upper="3.1416"
       effort="0"
       velocity="0" />
+    <!--mimic joint="differential_bar_axis" multiplier="1.0" offset="0.0"/-->
   </joint>
   <link
     name="crab_steer_assy1">
@@ -405,6 +406,7 @@
       upper="3.1416"
       effort="0"
       velocity="0" />
+    <!--mimic joint="differential_bar_axis" multiplier="-1.0" offset="0.0"/-->
   </joint>
   <link
     name="crab_steer_assy3">
@@ -704,8 +706,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt1_rodend1">
+  <link name="differential_connection_virt1_rodend1">
     <inertial>
       <origin
         xyz="-1.8095190798928E-05 0.000256559158545555 -0.0119432766155368"
@@ -720,29 +721,6 @@
         iyz="1.2341956803659E-08"
         izz="8.73411754001956E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend1.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection1_joint1"
@@ -761,9 +739,9 @@
       upper="1.5708"
       effort="0"
       velocity="0" />
+    <!--mimic joint="differential_bar_axis" multiplier="0.5" offset="0.0"/-->
   </joint>
-  <link
-    name="differential_connection_virt2_rodend1">
+  <link name="differential_connection_virt2_rodend1">
     <inertial>
       <origin
         xyz="-1.8095190798928E-05 0.000256559158545555 -0.0119432766155368"
@@ -778,29 +756,6 @@
         iyz="1.2341956803659E-08"
         izz="8.73411754001956E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend1.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection1_joint2"
@@ -878,8 +833,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt1_rodend2">
+  <link name="differential_connection_virt1_rodend2">
     <inertial>
       <origin
         xyz="1.6586029561616E-05 -0.000257984029574776 0.0119433090701106"
@@ -894,29 +848,6 @@
         iyz="1.3659961227637E-08"
         izz="8.73695854030152E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend2.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection2_joint1"
@@ -936,8 +867,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt2_rodend2">
+  <link name="differential_connection_virt2_rodend2">
     <inertial>
       <origin
         xyz="1.6586029561616E-05 -0.000257984029574776 0.0119433090701106"
@@ -952,29 +882,6 @@
         iyz="1.3659961227637E-08"
         izz="8.73695854030152E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend2.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection2_joint2"
@@ -1052,8 +959,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt1_rodend3">
+  <link name="differential_connection_virt1_rodend3">
     <inertial>
       <origin
         xyz="-1.8302E-05 -0.00025656 -0.011943"
@@ -1068,29 +974,6 @@
         iyz="-1.2338E-08"
         izz="8.7341E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend3.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection3_joint1"
@@ -1109,9 +992,9 @@
       upper="1.5708"
       effort="0"
       velocity="0" />
+    <!--mimic joint="differential_bar_axis" multiplier="-0.5" offset="0.0"/-->
   </joint>
-  <link
-    name="differential_connection_virt2_rodend3">
+  <link name="differential_connection_virt2_rodend3">
     <inertial>
       <origin
         xyz="-1.83024498982554E-05 -0.000256556754834769 -0.0119432783863921"
@@ -1126,29 +1009,6 @@
         iyz="-1.23383102642492E-08"
         izz="8.73412162454636E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend3.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection3_joint2"
@@ -1226,8 +1086,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt1_rodend4">
+  <link name="differential_connection_virt1_rodend4">
     <inertial>
       <origin
         xyz="1.65990020765117E-05 0.000258492328237325 0.0119435262828372"
@@ -1242,29 +1101,6 @@
         iyz="-1.37371542188793E-08"
         izz="8.73706672317548E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt1_rodend4.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection4_joint1"
@@ -1284,8 +1120,7 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link
-    name="differential_connection_virt2_rodend4">
+  <link name="differential_connection_virt2_rodend4">
     <inertial>
       <origin
         xyz="1.6599E-05 0.00025849 0.011944"
@@ -1300,29 +1135,6 @@
         iyz="-1.3737E-08"
         izz="8.7371E-08" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://revonic_description/eva_models/revonic_eva2/meshes/differential_connection_virt2_rodend4.STL" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="differential_connection4_joint2"
