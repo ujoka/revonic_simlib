@@ -185,6 +185,12 @@ class PyBulletRosWrapper(Node):
         self.num_dofs = len(self.revolute_joint_idx)
         self.joint_idx = list(self.revolute_joint_idx.keys())
 
+        # Apply physics constraints
+        # ----------------- Contraints Class -----------------
+        if self._rover_model == "eva2":
+            self.rev2_constaints = RevonicEva2Constraints(self.robot_id)
+            self.rev2_constaints._setup_closed_loops()
+
     def get_properties(self):
         revolute_joint_idx = {}
         prismatic_joint_idx = {}
@@ -242,6 +248,37 @@ class PyBulletRosWrapper(Node):
     def handle_unpause_physics(self, req, response=None):
         self.pause_simulation = False
         return response
+
+
+class RevonicEva2Constraints:
+    def __init__(self, robot_id):
+        self._robot_id = robot_id
+
+    def _setup_closed_loops(self):
+        """Internal helper to apply PyBullet constraints unique to differential ball-joints."""
+        left_bottom_cid = p.createConstraint(
+            parentBodyUniqueId=self._robot_id,
+            parentLinkIndex=17, # "diff_left_ball_joint"
+            childBodyUniqueId=self._robot_id,
+            childLinkIndex=1, # "left_suspension_joint"
+            jointType=p.JOINT_POINT2POINT,
+            jointAxis=[0, 0, 0],
+            parentFramePosition=[0, 0, 0],
+            childFramePosition=[-0.3060, 0, 0.06],
+        )
+        right_bottom_cid = p.createConstraint(
+            parentBodyUniqueId=self._robot_id,
+            parentLinkIndex=23, # "diff_right_ball_joint"
+            childBodyUniqueId=self._robot_id,
+            childLinkIndex=6, # "right_suspension_joint"
+            jointType=p.JOINT_POINT2POINT,
+            jointAxis=[0, 0, 0],
+            parentFramePosition=[0, 0, 0],
+            childFramePosition=[-0.3060, 0, 0.06],
+        )
+        
+        for cid in (left_bottom_cid, right_bottom_cid):
+            p.changeConstraint(cid, maxForce=1000.0, erp=0.5)
 
 
 def main():
