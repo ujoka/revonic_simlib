@@ -768,7 +768,7 @@
     <child
       link="differential_connection_virt2_rodend1" />
     <axis
-      xyz="-1 0 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -860,7 +860,7 @@
     <child
       link="differential_connection_virt1_rodend2" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 0 -1" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -894,7 +894,7 @@
     <child
       link="differential_connection_virt2_rodend2" />
     <axis
-      xyz="-1 0 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -945,10 +945,10 @@
     name="differential_connection2_joint3"
     type="revolute">
     <origin
-      xyz="0 0 0"
+      xyz="-0.00014998 0.0021259 -0.098347"
       rpy="0 0 0" />
     <parent
-      link="differential_connection_virt2_rodend2" />
+      link="differential_connection_rodend1" />
     <child
       link="differential_connection_rodend2" />
     <axis
@@ -1021,7 +1021,7 @@
     <child
       link="differential_connection_virt2_rodend3" />
     <axis
-      xyz="-1 0 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -1113,7 +1113,7 @@
     <child
       link="differential_connection_virt1_rodend4" />
     <axis
-      xyz="0 1 0" />
+      xyz="-1 0 0" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -1147,7 +1147,7 @@
     <child
       link="differential_connection_virt2_rodend4" />
     <axis
-      xyz="-1 0 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-1.5708"
       upper="1.5708"
@@ -1198,10 +1198,10 @@
     name="differential_connection4_joint3"
     type="revolute">
     <origin
-      xyz="0 0 0"
+      xyz="-0.00014998 -0.0021259 -0.098347"
       rpy="0 0 0" />
     <parent
-      link="differential_connection_virt2_rodend4" />
+      link="differential_connection_rodend3" />
     <child
       link="differential_connection_rodend4" />
     <axis
